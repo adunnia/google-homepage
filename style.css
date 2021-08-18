@@ -1,0 +1,35 @@
+html, body { background-color: white;
+
+}
+
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    background: gray;
+    
+}
+header li { 
+    display: inline-block;
+    padding: 10px 10px;
+float: left;
+
+ }
+
+.rightnav { float: right;}
+
+.main { 
+width: 600px;
+margin: 0 auto;
+}
+
+input[type=search] {
+    width: 300px;
+
+}
+.google-img { 
+width: 300px;
+margin: 200px 200px;
+}
