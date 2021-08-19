@@ -4,9 +4,9 @@
 
 html, body { 
     background-color: white;
-margin: 0 auto;
-font-family: 'Roboto', sans-serif;
-font-size: 14px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 
@@ -16,8 +16,9 @@ header ul {
     list-style-type: none;
     text-decoration: none;
     color: #202020;
-  display: inline-flex;
-  margin-left: 20px;
+    display: inline-flex;
+    font-size: 13.5px;
+    margin-left: 20px;
 }
 button {
     padding: 9px 22px;
@@ -42,9 +43,13 @@ button:hover {
     
 }
 
-    header li { 
+header li { 
     padding: 10px 10px; 
  }
+
+header li  {
+    cursor: pointer;
+}
 
 nav { 
     display: flex;
@@ -63,10 +68,22 @@ nav {
     max-width: 600px;
 }
 
+.main p, a { 
+    font-size: 12.5px;
+}
+
+.main p {
+    color: #202020}
+.main a {
+    text-decoration: none;
+    color:#1A39CB;    
+}
+.main a:hover { 
+    text-decoration: underline;}
 .searchbar {
     display: flex;
     justify-content: ;
-    border: 1.25px solid #DCDCDC;
+    border: 1.25px solid #DCDCDC; 
     border-radius: 20px;
     height: 42px;
     width: 575px;
@@ -74,6 +91,9 @@ nav {
     margin-bottom: 25px;
     
 }
+.searchbar:hover { 
+    box-shadow: 0px 3px 5px 0px #DCDCDC;}
+
 .searchbar #searchbox {
     height: 30px; 
     width: 400px;
@@ -85,32 +105,39 @@ nav {
  
 }
 input[type=submit] {
-    border: none;
-    border-radius: 3;
-    background: #F5F5F5;
+    border: 1px transparent;
+    background: #F9F9F9;
     font-size: 13.5px;
-    padding: 10px 20px;
+    padding: 10px 18px;
     display: inline-flex;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     justify-content: center;
     color: #202020;
 }
-.searchbuttons {
-
+#googlesearch, #imfeelinglucky {
+    border-radius: 4px;
+    margin: 4px;
 }
-#search-icon { height: 10px;
-width: 10px;
-opacity: .3;
-margin-top: -10px;
-margin-left: 10px;}
+input[type=submit]:hover { 
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 1px #DCDCDC;
+}
+#search-icon { 
+    height: 10px;
+    width: 10px;
+    opacity: .3;
+    margin-top: -10px;
+    margin-left: 10px;}
 
 .google-img { 
     width: 275px;
     height: 93px;
     margin: 0 auto;
     display: block;
-    margin-top: 80px;
-    margin-bottom: 25px;
+    margin-top: 70px;
+    margin-bottom: 15px;
 }
 
 footer ul, p, img {
@@ -123,27 +150,35 @@ footer ul, p, img {
     padding: 15px 10px;
     margin-left: 20px;
     margin-right: 20px;
-    color: gray;
-   
+    color: gray; 
 }
+
 footer li { padding: 0 10px;
 }
 li:hover {
     text-decoration: underline;
+    cursor: pointer;
+    
 }
 #carbon-logo { 
-display: flex;
-align-items: center;
-padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+   
 }
 .leaf-logo  { 
-width: 10px;
-height: 12px;
-margin-right: 0px;
-padding-right: 0px;
+    width: 10px;
+    height: 12px;
+    margin-right: 0px;
+    padding-right: 0px;
 }
-nav p { margin-left: 0px;
-padding-left: 5px;}
+nav p { 
+    margin-left: 0px;
+    padding-left: 5px;}
+
+nav p:hover { 
+    cursor:pointer;
+    text-decoration: underline;}
 
 #navfooter { 
     background: #EEEEEE;
@@ -151,3 +186,13 @@ padding-left: 5px;}
     position: fixed;
     width: 100%;
 }
+
+@media only screen and (max-width: 750px) {
+    #navfooter { 
+        display: flex;
+        flex-direction: column; 
+        text-align:center;
+          }
+    #carbon-logo { order: 1 }
+    ul { order: 2 }
+               }
