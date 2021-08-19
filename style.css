@@ -1,5 +1,12 @@
-html, body { background-color: white;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+html, body { 
+    background-color: white;
+margin: 0 auto;
+
+font-family: 'Roboto', sans-serif;
 }
 
 
@@ -8,28 +15,68 @@ header ul {
     padding: 0;
     list-style-type: none;
     text-decoration: none;
-    background: gray;
-    
+    color: #202020;
+}
+button {
+    padding: 10px 10px;
+    border: none;
+    background: blue;
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
 }
 header li { 
     display: inline-block;
     padding: 10px 10px;
-float: left;
+    
 
  }
 
-.rightnav { float: right;}
 
-.main { 
-width: 600px;
-margin: 0 auto;
+p a {
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 input[type=search] {
-    width: 300px;
+    padding: 100px;
+
+    display: block;
+   
+}
+input[type=submit] {
+    border: none;
+    border-radius: 0;
+    background: #FAFAFA;
+    font-size: 14px;
+    padding: 10px 14px;
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
 
 }
+
 .google-img { 
-width: 300px;
-margin: 200px 200px;
+    width: 200 px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer ul {
+    list-style-type: none;
+    text-decoration: none;
+    background: #ECECEC;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer li { 
 }
