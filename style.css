@@ -20,16 +20,30 @@ header ul {
   margin-left: 20px;
 }
 button {
-    padding: 10px 10px;
+    padding: 9px 22px;
     border: none;
-    background: blue;
+    background: #2074E0;
     color: white;
-    font-weight: 500;
-    border-radius: 2px;
+    border-radius: 3px;
+    font-size: 14px;
 }
-header li { 
-    padding: 10px 10px;
+button:hover {
+    cursor: pointer;
+    background: #2B7CE4;
+    box-shadow: 2px ;
+}
+#app-icon:hover {
+    background-color: #D8D8D8;
+    border:none;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: -7px;
+    margin-right: -7px;
     
+}
+
+    header li { 
+    padding: 10px 10px; 
  }
 
 nav { 
@@ -38,7 +52,8 @@ nav {
     align-items: center;
     
 }
-.rightnav {align-items: center;}
+.rightnav {
+    align-items: center;}
 
 .main {
     display: flex;
@@ -46,56 +61,59 @@ nav {
     align-items: center;
     margin: 0 auto;
     max-width: 600px;
-    
 }
 
 .searchbar {
     display: flex;
-    justify-content: space-between;
-    border: 1.25px solid #ECECEC;
+    justify-content: ;
+    border: 1.25px solid #DCDCDC;
     border-radius: 20px;
     height: 42px;
     width: 575px;
-    padding:;
     align-items: center;
     margin-bottom: 25px;
+    
 }
 .searchbar #searchbox {
     height: 30px; 
     width: 400px;
     border: none;
     outline: none;
- margin-right: 10px;
+    margin-right: ;
+    margin-left: 20px;
+    font-size: 15px;
  
 }
 input[type=submit] {
     border: none;
-    border-radius: 2;
+    border-radius: 3;
     background: #F5F5F5;
     font-size: 13.5px;
-    padding: 10px 0px;
-    display: inline-block;
-    width: 150px;
+    padding: 10px 20px;
+    display: inline-flex;
     margin-bottom: 25px;
     justify-content: center;
+    color: #202020;
 }
 .searchbuttons {
 
 }
 #search-icon { height: 10px;
 width: 10px;
-opacity: .3;}
+opacity: .3;
+margin-top: -10px;
+margin-left: 10px;}
 
 .google-img { 
-    width: 280px;
-    height: 95px;
+    width: 275px;
+    height: 93px;
     margin: 0 auto;
     display: block;
     margin-top: 80px;
     margin-bottom: 25px;
 }
 
-footer ul, p {
+footer ul, p, img {
     list-style-type: none;
     text-decoration: none;
     margin-bottom: 0;
@@ -106,14 +124,29 @@ footer ul, p {
     margin-left: 20px;
     margin-right: 20px;
     color: gray;
+   
 }
 footer li { padding: 0 10px;
 }
 li:hover {
     text-decoration: underline;
 }
+#carbon-logo { 
+display: flex;
+align-items: center;
+padding: 0;
+}
+.leaf-logo  { 
+width: 10px;
+height: 12px;
+margin-right: 0px;
+padding-right: 0px;
+}
+nav p { margin-left: 0px;
+padding-left: 5px;}
+
 #navfooter { 
-    background: #ECECEC;
+    background: #EEEEEE;
     bottom: 0;
     position: fixed;
     width: 100%;
