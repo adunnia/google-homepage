@@ -6,7 +6,7 @@ html, body {
     background-color: white;
 margin: 0 auto;
 font-family: 'Roboto', sans-serif;
-font-size: 13px;
+font-size: 14px;
 }
 
 
@@ -16,7 +16,8 @@ header ul {
     list-style-type: none;
     text-decoration: none;
     color: #202020;
-  
+  display: inline-flex;
+  margin-left: 20px;
 }
 button {
     padding: 10px 10px;
@@ -27,14 +28,17 @@ button {
     border-radius: 2px;
 }
 header li { 
-    display: inline-block;
+    padding: 10px 10px;
+    
  }
 
 nav { 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
-
+.rightnav {align-items: center;}
 
 .main {
     display: flex;
@@ -42,51 +46,75 @@ nav {
     align-items: center;
     margin: 0 auto;
     max-width: 600px;
-    line-height: ;
+    
 }
 
 .searchbar {
     display: flex;
     justify-content: space-between;
-    border: 1px solid gray;
+    border: 1.25px solid #ECECEC;
     border-radius: 20px;
-    height: 40px;
-    width: 595px;
+    height: 42px;
+    width: 575px;
+    padding:;
+    align-items: center;
+    margin-bottom: 25px;
 }
 .searchbar #searchbox {
-    height: 20px; 
-    width: 580px;
+    height: 30px; 
+    width: 400px;
     border: none;
     outline: none;
+ margin-right: 10px;
  
 }
 input[type=submit] {
     border: none;
-    border-radius: 0;
-    background: #FAFAFA;
-    font-size: 14px;
-    padding: 10px 14px;
+    border-radius: 2;
+    background: #F5F5F5;
+    font-size: 13.5px;
+    padding: 10px 0px;
     display: inline-block;
-    width: 200px;
-   
+    width: 150px;
+    margin-bottom: 25px;
+    justify-content: center;
 }
+.searchbuttons {
+
+}
+#search-icon { height: 10px;
+width: 10px;
+opacity: .3;}
 
 .google-img { 
     width: 280px;
     height: 95px;
     margin: 0 auto;
     display: block;
+    margin-top: 80px;
+    margin-bottom: 25px;
 }
 
-footer ul {
+footer ul, p {
     list-style-type: none;
     text-decoration: none;
-    background: #ECECEC;
     margin-bottom: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: gray;
 }
-
-footer li { 
+footer li { padding: 0 10px;
+}
+li:hover {
+    text-decoration: underline;
+}
+#navfooter { 
+    background: #ECECEC;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
